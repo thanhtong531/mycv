@@ -1,0 +1,118 @@
+// sass ../sass/app.scss ../css/app.css --watch
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-size: 16px;
+}
+.wrapper {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 40px;
+  margin: 50px auto;
+  max-width: 900px;
+
+  &-img {
+    width: 200px;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  &-img {
+    background-position: center center;
+    flex: 0 1;
+  }
+
+  &-info {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px 30px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    // flex-direction: column;
+    justify-content: center;
+    gap: 0 10px;
+    width: 630px;
+    border-radius: 8px;
+  }
+
+  &-name {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  &-employ {
+    display: block;
+    padding-bottom: 15px;
+    color: #0877e0;
+  }
+  &-desc {
+    line-height: 1.4;
+  }
+}
+
+.contact {
+  &-list {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    margin-top: 20px;
+    white-space: wrap;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &-item span:first-child {
+    color: #ffa400;
+    font-weight: bold;
+    width: 10px;
+    border-bottom: 2px solid #0877e0;
+  }
+}
+
+.social {
+  &-list {
+    margin-top: 40px;
+    display: flex;
+    gap: 0 30px;
+  }
+  &-item {
+    color: #000;
+    font-size: 20px;
+  }
+}
+
+.tooltip-text {
+  position: fixed;
+  background-color: #ffa400;
+  transition: all 0.2s linear;
+  padding: 10px;
+  border-radius: 8px;
+}
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #0877e0;
+  left: 50%;
+  transform: translate(-50%, 255%);
+}
+.line-name {
+  color: #219ebc;
+  // background: -webkit-linear-gradient(#ffb703, #219ebc);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+}
+
+.typed-cursor {
+  color: #219ebc;
+}
