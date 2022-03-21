@@ -25,32 +25,51 @@
       href="https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:wght@300;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/app.css" />
   </head>
   <body>
     <div class="wrapper">
       <header class="about">
-        <img src="./img/tong.png" alt="" class="about-img" />
+        <!-- <img src="./img/tong.png" alt="" class="about-img" /> -->
+        <img
+          src="https://source.unsplash.com/random"
+          alt=""
+          class="about-img"
+        />
         <div class="about-info">
           <div class="about-content">
             <h2 class="about-name">I'm <span class="line-name"></span></h2>
+            <!-- <h2 class="about-name">I'm Nguyen Thanh Tong</h2> -->
+            <div class="social-list">
+              <a
+                href="https://facebook.com/nguyentong2k"
+                data-name="Facebook"
+                class="social-item"
+              >
+                <i class="fa-brands fa-facebook-f social-link"></i>
+              </a>
+              <a href="#!" class="social-item" data-name="Tiktok">
+                <i class="fa-brands fa-tiktok social-link"></i>
+              </a>
+              <a
+                href="https://github.com/thanhtong531"
+                class="social-item"
+                data-name="Github"
+              >
+                <i class="fa-brands fa-github social-link"></i>
+              </a>
+            </div>
           </div>
-          <div class="social-list">
-            <a
-              href="https://facebook.com/nguyentong2k"
-              data-name="Facebook"
-              class="social-item"
-            >
-              <i class="fa-brands fa-facebook social-link"></i>
-            </a>
-            <a href="#!" class="social-item" data-name="Tiktok">
-              <i class="fa-brands fa-tiktok social-link"></i>
-            </a>
-            <a href="#!" class="social-item" data-name="Github">
-              <i class="fa-brands fa-github social-link"></i>
-            </a>
-          </div>
+
           <div class="contact-list">
             <div class="contact-item">
               <span>Email</span>
@@ -71,16 +90,89 @@
           </div>
         </div>
       </header>
-      <section class="information">
-        <h3 class="information-title">Education</h3>
-        <ul>
-          <li>
-            I'm live in Can Tho City and born in Kien Giang. I'm study at Can
-            Tho University. I've been studying System Information, now I'm the
-            last-year student.
+
+      <div class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item active">
+            <i class="fa-solid fa-user"></i>
+            <span>Introduce</span>
+          </li>
+          <li class="navbar-item">
+            <ion-icon name="school-outline"></ion-icon>
+            <span>Study</span>
+          </li>
+          <li class="navbar-item">
+            <ion-icon name="heart"></ion-icon>
+            <span>Hobbies</span>
+          </li>
+          <li class="navbar-item">
+            <i class="fa-solid fa-certificate"></i>
+            <span>Certificate</span>
           </li>
         </ul>
-      </section>
+
+        <ul class="information-list">
+          <li class="information-item">
+            <h3 class="intro">Giới thiệu</h3>
+            <p>
+              I'm study at Can Tho University, I'm studying Information Systems
+              for 4 years.
+            </p>
+            <h3 class="project-name">My project</h3>
+            <div class="project-list">
+              <div class="project-item">
+                <a
+                  href="https://thanhtong531.github.io/playmusic/"
+                  class="project-link"
+                >
+                  <img src="./img/project-music.png" alt="" />
+                </a>
+              </div>
+              <div class="project-item">
+                <a href="https://thanhtong531.github.io/" class="project-link">
+                  <img src="./img/project-sport.png" alt="" />
+                </a>
+              </div>
+              <div class="project-item">
+                <a
+                  href="https://thanhtong531.github.io/js-tic-tac-toe/  "
+                  class="project-link"
+                >
+                  <img src="./img/project-tic-tac-toe.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="information-item active">
+            <h4 class="information-education intro">Education</h4>
+            <div class="education-list">
+              <div class="education-item">
+                <h4 class="education-name">Can Tho University</h4>
+                <span>2018 - nay</span>
+              </div>
+              <div class="education-item">
+                <h4 class="education-name">F8</h4>
+                <span>2019 - nay</span>
+              </div>
+              <div class="education-item">
+                <h4 class="education-name">Evondev</h4>
+                <span>2020 - nay</span>
+              </div>
+            </div>
+            <div class="skills">
+              <h3 class="skills-title">Skills</h3>
+              <ul class="skills-list">
+                <li class="skills-item">HTML & CSS</li>
+                <li class="skills-item">Javascript</li>
+                <li class="skills-item">PHP</li>
+                <li class="skills-item">Git</li>
+                <li class="skills-item">Bootstrap</li>
+                <li class="skills-item">Sass</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./js/starter.js"></script>

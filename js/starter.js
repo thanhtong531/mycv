@@ -18,10 +18,10 @@ function handleShowToolTip(e) {
   tooltip.textContent = e.target.dataset.name;
   document.body.appendChild(tooltip);
   const cords = e.target.getBoundingClientRect();
-  const triangle = 25;
+  const triangle = 11;
   const { left, top, width } = cords;
-  tooltip.style.left = `${left - width}px`;
-  tooltip.style.top = `${top - triangle - e.target.offsetHeight}px`;
+  tooltip.style.left = `${left - width / 2}px`;
+  tooltip.style.top = `${top - triangle - tooltip.offsetHeight}px`;
   // console.log(cords);
 }
 
