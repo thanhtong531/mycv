@@ -7,6 +7,7 @@
     <title>CV | Nguyen Thanh Tong</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" type="image/png" href="/img/logo.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap"
       rel="stylesheet"
@@ -39,12 +40,12 @@
   <body>
     <div class="wrapper">
       <header class="about">
-        <!-- <img src="./img/tong.png" alt="" class="about-img" /> -->
-        <img
+        <img src="./img/tong.png" alt="" class="about-img" />
+        <!-- <img
           src="https://source.unsplash.com/random"
           alt=""
           class="about-img"
-        />
+        /> -->
         <div class="about-info">
           <div class="about-content">
             <h2 class="about-name">I'm <span class="line-name"></span></h2>
@@ -93,31 +94,37 @@
 
       <div class="navbar">
         <ul class="navbar-list">
-          <li class="navbar-item active">
+          <li class="navbar-item active" data-idx="1">
             <i class="fa-solid fa-user"></i>
             <span>Introduce</span>
           </li>
-          <li class="navbar-item">
+          <li class="navbar-item" data-idx="2">
             <ion-icon name="school-outline"></ion-icon>
             <span>Study</span>
           </li>
-          <li class="navbar-item">
+          <li class="navbar-item" data-idx="3">
             <ion-icon name="heart"></ion-icon>
             <span>Hobbies</span>
           </li>
-          <li class="navbar-item">
+          <li class="navbar-item" data-idx="4">
             <i class="fa-solid fa-certificate"></i>
             <span>Certificate</span>
           </li>
         </ul>
 
         <ul class="information-list">
-          <li class="information-item">
+          <li class="information-item active" data-idx="1">
             <h3 class="intro">Giới thiệu</h3>
-            <p>
-              I'm study at Can Tho University, I'm studying Information Systems
-              for 4 years.
-            </p>
+            <div class="intro-list">
+              <p>
+                I'm study at Can Tho University, I'm studying Information
+                Systems for 4 years.
+              </p>
+              <p>
+                Front-end technology and Back-end web application development.
+              </p>
+              <p>Ability to learn and apply new technology quickly.</p>
+            </div>
             <h3 class="project-name">My project</h3>
             <div class="project-list">
               <div class="project-item">
@@ -128,6 +135,7 @@
                   <img src="./img/project-music.png" alt="" />
                 </a>
               </div>
+
               <div class="project-item">
                 <a href="https://thanhtong531.github.io/" class="project-link">
                   <img src="./img/project-sport.png" alt="" />
@@ -143,7 +151,7 @@
               </div>
             </div>
           </li>
-          <li class="information-item active">
+          <li class="information-item" data-idx="2">
             <h4 class="information-education intro">Education</h4>
             <div class="education-list">
               <div class="education-item">
@@ -167,9 +175,47 @@
                 <li class="skills-item">PHP</li>
                 <li class="skills-item">Git</li>
                 <li class="skills-item">Bootstrap</li>
-                <li class="skills-item">Sass</li>
+                <li class="skills-item">HTML & CSS</li>
+                <li class="skills-item">Javascript</li>
+                <li class="skills-item">PHP</li>
+                <li class="skills-item">Git</li>
+                <li class="skills-item">Bootstrap</li>
+                <!-- <li class="skills-item">Sass</li> -->
               </ul>
             </div>
+          </li>
+          <li class="information-item">
+            <h4 class="information-hobbies intro">Hobbies</h4>
+            <ul class="hobbies-list">
+              <li class="hobbies-item">
+                <div class="hobbies-title">
+                  <img src="./img/game.png" alt="" />
+                  Play Music
+                </div>
+                <div class="hobbies-content">
+                  <img src="./img/spotify.png" alt="" class="hobbies-img" />
+                  <p class="hobbies-desc">
+                    I usually listen to music to release stress.
+                  </p>
+                </div>
+              </li>
+              <li class="hobbies-item">
+                <div class="hobbies-title">
+                  <img
+                    src="./img/sport.png"
+                    alt=""
+                    class="hobbies-img__small"
+                  />
+                  Play Sport
+                </div>
+                <div class="hobbies-content">
+                  <img src="./img/sports.png" alt="" class="hobbies-img" />
+                  <p class="hobbies-desc">
+                    Playing sports are very good for your health.
+                  </p>
+                </div>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
