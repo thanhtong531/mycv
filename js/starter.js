@@ -46,7 +46,6 @@ function handleShowToolTip(e) {
 // NavbarItem
 [...navbarItems].forEach((navbar, idx) => {
   navbar.addEventListener("click", function () {
-    console.log(idx);
     // Lấy được index của element ta click vào
     const item = informationItems[idx];
     [...navbarItems].forEach((item) => item.classList.remove("active"));
